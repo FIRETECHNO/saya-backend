@@ -14,16 +14,10 @@ import { S3Module } from './s3/s3.module';
 import { AppStateModule } from './app-state/app-state.module';
 import { MailModule } from './mail/mail.module';
 import { ThrottlerModule } from '@nestjs/throttler';
-import { VideoModule } from './video/video.module';
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';
-import { JobFormModule } from './job-form/job-form.module';
 import { AdminModule } from './admin/admin.module';
-import { TPaymentsModule } from './t-payments/t-payments.module';
-import { EmployeeBotModule } from './employee-bot/employee-bot.module';
 import { ThrottlerAutoModule } from './common/throttler-auto.module';
-import { JobFormFillRequestModule } from './job-form-fill-request/job-form-fill-request.module';
-import { InvitesModule } from './invites/invites.module';
 
 @Module({
   imports: [
@@ -51,13 +45,7 @@ import { InvitesModule } from './invites/invites.module';
     S3Module,
     AppStateModule,
     MailModule,
-    VideoModule,
-    JobFormModule,
     AdminModule,
-    TPaymentsModule,
-    EmployeeBotModule,
-    JobFormFillRequestModule,
-    InvitesModule,
   ],
   controllers: [AppController],
   providers: [AppService], // ← без APP_GUARD!

@@ -19,12 +19,7 @@ declare global {
       YC_SECRET: string
       YC_BUCKET_NAME: string
 
-      TG_EMPLOYEE_REGISTRATION_BOT_TOKEN: string
-
       API_URL: string
-      T_BANK_TERMINAL_ID: string
-      T_BANK_TERMINAL_PASSWORD: string
-      T_BANK_PAYMENT_INIT_URL: string
     }
   }
 }
